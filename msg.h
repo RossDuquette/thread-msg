@@ -13,7 +13,6 @@ class Msg {
         void operator=(const Msg& other);
 
         uint8_t data[MAX_MSG_LEN];
-        int len;
 };
 
 #endif
