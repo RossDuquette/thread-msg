@@ -10,8 +10,9 @@ class Msg {
         Msg();
         Msg(void* msg_data, int msg_len);
 
-        void operator=(const Msg& other);
+        void copy_from(const Msg& other);
 
+    protected:
         uint8_t data[MAX_MSG_LEN];
 };
 

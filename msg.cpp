@@ -13,7 +13,7 @@ Msg::Msg(void* msg_data, int msg_len)
     memcpy(data, msg_data, msg_len);
 }
 
-void Msg::operator=(const Msg& other)
+void Msg::copy_from(const Msg& other)
 {
     memcpy(data, other.data, MAX_MSG_LEN);
 }
